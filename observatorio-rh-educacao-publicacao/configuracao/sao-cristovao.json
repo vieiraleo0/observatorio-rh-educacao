@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0",
+  "municipio": {
+    "nome": "São Cristóvão",
+    "uf": "SE",
+    "codigo_ibge": null
+  },
+  "rede": {
+    "tipo": "municipal",
+    "nome": "Rede Municipal de Educação"
+  },
+  "configuracao": {
+    "nome": "Configuração de referência - São Cristóvão",
+    "versao": "1.0.0",
+    "status": "rascunho",
+    "elaborada_em": "2026-11-01",
+    "vigencia": {
+      "inicio": null,
+      "fim": null
+    },
+    "responsavel": null,
+    "justificativa": "Transcrição dos parâmetros de trabalho definidos durante a elaboração do Observatório. As fontes normativas/administrativas ainda precisam ser indicadas e validadas pelo município antes de uso oficial."
+  },
+  "parametros": [
+    {
+      "id": "cuidador-educacao-infantil",
+      "cargo_grupo": "Cuidador",
+      "tipo_regra": "por_turma",
+      "unidade_analise": "turma",
+      "status": "pendente_validacao",
+      "regra": {
+        "etapa": "Educação Infantil",
+        "condicao_alunos": "mais_de",
+        "limite_alunos": 20,
+        "referencia": "1 cuidador por turma elegível; ajustar por simultaneidade e jornada",
+        "jornada_referencia_horas_semanais": 40,
+        "jornada_referencia_horas_diarias": 8,
+        "turmas_simultaneas_exigem_cobertura_simultanea": true,
+        "turma_41_ou_mais_alerta": "possível revisão/desmembramento"
+      },
+      "condicoes": [
+        "Somente compartilhar profissional entre turnos se horários, intervalos e jornada forem compatíveis."
+      ],
+      "excecoes": [
+        "Sem horários suficientes, classificar como inconclusivo; não presumir compatibilidade."
+      ],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Parâmetro de referência pendente de validação normativa/administrativa local."
+    },
+    {
+      "id": "merendeiro",
+      "cargo_grupo": "Merendeiro",
+      "tipo_regra": "proporcional",
+      "unidade_analise": "escola",
+      "status": "pendente_validacao",
+      "regra": {
+        "alunos_por_profissional": 150,
+        "formula": "ceil(total_alunos/150) para total_alunos > 0"
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Aplicar ao total de alunos da escola, sem dividir por turno, turma ou etapa."
+    },
+    {
+      "id": "executor",
+      "cargo_grupo": "Executor",
+      "tipo_regra": "proporcional",
+      "unidade_analise": "escola",
+      "status": "pendente_validacao",
+      "regra": {
+        "alunos_por_profissional": 100,
+        "formula": "ceil(total_alunos/100) para total_alunos > 0"
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Aplicar ao total de alunos da escola."
+    },
+    {
+      "id": "portaria-vigilancia",
+      "cargo_grupo": "Agente de Portaria e Vigilante",
+      "tipo_regra": "composicao",
+      "unidade_analise": "escola",
+      "status": "pendente_validacao",
+      "regra": {
+        "por_turnos": {
+          "1": {
+            "total": 1,
+            "minimo_agente_portaria": 1
+          },
+          "2": {
+            "total": 1,
+            "minimo_agente_portaria": 1
+          },
+          "3": {
+            "total": 2,
+            "minimo_agente_portaria": 1,
+            "segundo_profissional_permitido": [
+              "agente_de_portaria",
+              "vigilante"
+            ]
+          }
+        },
+        "avaliar_composicao_conjunta": true,
+        "exibir_funcoes_separadamente": true
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Avaliar composição conjunta e exibir quantitativos por função/turno."
+    },
+    {
+      "id": "oficial-administrativo",
+      "cargo_grupo": "Oficial Administrativo",
+      "tipo_regra": "por_turno",
+      "unidade_analise": "escola",
+      "status": "pendente_validacao",
+      "regra": {
+        "por_turnos": {
+          "1": 1,
+          "2": 1,
+          "3": 2
+        },
+        "unidade": "profissionais_por_escola"
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": ""
+    },
+    {
+      "id": "professor-sala-regular",
+      "cargo_grupo": "Professor de sala regular - 1º ao 5º ano",
+      "tipo_regra": "mapeamento",
+      "unidade_analise": "escola",
+      "status": "somente_mapeamento",
+      "regra": {
+        "agrupar_por": [
+          "escola",
+          "turno"
+        ],
+        "indicadores": [
+          "quantidade_turmas",
+          "quantidade_professores",
+          "distribuicao_professores"
+        ]
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Análise descritiva; não inferir capacidade individual ou quantitativo ideal."
+    },
+    {
+      "id": "professor-sala-recursos",
+      "cargo_grupo": "Professor de sala de recursos",
+      "tipo_regra": "mapeamento",
+      "unidade_analise": "atendimento",
+      "status": "somente_mapeamento",
+      "regra": {
+        "indicadores": [
+          "alunos_atendidos_por_professor",
+          "escola",
+          "turno"
+        ],
+        "considerar_contraturno_quando_informado": true,
+        "deduplicar_professores_e_alunos": true
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Não avaliar capacidade, suficiência ou quantitativo ideal."
+    },
+    {
+      "id": "professor-area-contratado",
+      "cargo_grupo": "Professor por área - contratado",
+      "tipo_regra": "por_jornada",
+      "unidade_analise": "servidor",
+      "status": "pendente_validacao",
+      "regra": {
+        "modulos_semanais_referencia": 25,
+        "somar_modulos_em_todas_escolas": true,
+        "modulos_ociosos": "max(referencia - modulos_atribuidos, 0)",
+        "acima_referencia": "sinalizar_para_conferencia"
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Referência de 25 módulos aplicável somente aos contratados; validar fonte local."
+    },
+    {
+      "id": "professor-area-efetivo",
+      "cargo_grupo": "Professor por área - efetivo",
+      "tipo_regra": "mapeamento",
+      "unidade_analise": "servidor",
+      "status": "somente_mapeamento",
+      "regra": {
+        "indicadores": [
+          "aulas_por_professor",
+          "area",
+          "escola"
+        ],
+        "somar_escolas_no_nivel_individual": true,
+        "aplicar_referencia_25_modulos": false
+      },
+      "condicoes": [],
+      "excecoes": [],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Não calcular ociosidade com base em 25 módulos."
+    },
+    {
+      "id": "apoio-escolar",
+      "cargo_grupo": "Profissionais de apoio escolar e cuidadores - mapeamento",
+      "tipo_regra": "mapeamento",
+      "unidade_analise": "turma",
+      "status": "somente_mapeamento",
+      "regra": {
+        "indicadores": [
+          "alunos_com_registro_agregado",
+          "presenca_cuidador",
+          "presenca_profissional_apoio",
+          "turmas_com_ambos",
+          "turmas_com_nenhum",
+          "profissionais_por_escola_turno"
+        ],
+        "calcular_quantitativo_ideal": false,
+        "avaliar_suficiencia": false
+      },
+      "condicoes": [],
+      "excecoes": [
+        "Não exibir nomes, diagnósticos, CID, laudos ou detalhes clínicos."
+      ],
+      "fonte": null,
+      "vigencia": null,
+      "notas": "Somente dados agregados e desidentificados; não concluir suficiência ou necessidade de contratação."
+    }
+  ],
+  "observacoes": [
+    "Esta configuração é uma referência de trabalho, não certificação de conformidade legal.",
+    "Todos os parâmetros pendentes devem ser confirmados e vinculados à fonte normativa ou administrativa antes de uso oficial.",
+    "A auditoria deve guardar cópia imutável da configuração efetivamente utilizada.",
+    "Dados pessoais e sensíveis não devem ser incluídos neste arquivo."
+  ]
+}

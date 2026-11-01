@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Modelo de Configuração Municipal - Observatório RH Educação",
+  "description": "Modelo-base. Regras não confirmadas devem permanecer pendentes.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "municipio",
+    "rede",
+    "configuracao",
+    "parametros"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "municipio": {
+      "type": "object",
+      "required": [
+        "nome",
+        "uf"
+      ],
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        },
+        "codigo_ibge": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "rede": {
+      "type": "object",
+      "required": [
+        "tipo"
+      ],
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": [
+            "municipal",
+            "estadual",
+            "outra"
+          ]
+        },
+        "nome": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "configuracao": {
+      "type": "object",
+      "required": [
+        "nome",
+        "versao",
+        "status",
+        "vigencia"
+      ],
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "versao": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "rascunho",
+            "validada",
+            "substituida"
+          ]
+        },
+        "vigencia": {
+          "type": "object",
+          "required": [
+            "inicio",
+            "fim"
+          ],
+          "properties": {
+            "inicio": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "fim": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "responsavel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "justificativa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "parametros": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "cargo_grupo",
+          "tipo_regra",
+          "unidade_analise",
+          "status",
+          "regra"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "cargo_grupo": {
+            "type": "string"
+          },
+          "tipo_regra": {
+            "type": "string",
+            "enum": [
+              "proporcional",
+              "faixas",
+              "por_turma",
+              "por_turno",
+              "por_jornada",
+              "composicao",
+              "mapeamento",
+              "personalizada"
+            ]
+          },
+          "unidade_analise": {
+            "type": "string",
+            "enum": [
+              "rede",
+              "escola",
+              "turma",
+              "turno",
+              "servidor",
+              "vinculo",
+              "atendimento"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "confirmada_pelo_municipio",
+              "pendente_validacao",
+              "somente_mapeamento",
+              "nao_aplicavel"
+            ]
+          },
+          "regra": {
+            "type": "object"
+          },
+          "condicoes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "excecoes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fonte": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "vigencia": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "notas": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "observacoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
