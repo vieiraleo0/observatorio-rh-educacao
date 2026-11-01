@@ -1,21 +1,38 @@
+<div align="center">
+
+<img src="observatorio-rh-educacao-capa-github.png" alt="Observatório RH Educação" width="100%">
+
 # Observatório RH Educação
 
-**Inteligência de dados aplicada à gestão de recursos humanos da educação pública municipal.**
+### Inteligência de dados para a gestão educacional
 
-O Observatório RH Educação é um projeto voltado à análise e auditoria de dados de redes públicas de ensino, com foco em dimensionamento de pessoal, distribuição de profissionais, qualidade dos dados e indicadores gerenciais.
+**Dados • Evidências • Melhores decisões**
 
-## Objetivos
+</div>
 
-* Analisar o quadro de pessoal da educação municipal.
-* Identificar inconsistências cadastrais e administrativas.
-* Avaliar parâmetros de dimensionamento por cargo.
-* Analisar matrículas, escolas, turmas e turnos.
-* Organizar indicadores de recursos humanos e folha.
-* Apoiar decisões administrativas com informações verificáveis.
+---
+
+## Sobre o projeto
+
+O **Observatório RH Educação** é uma iniciativa de inteligência de dados aplicada à gestão de recursos humanos da educação pública municipal.
+
+Seu propósito é transformar bases administrativas e educacionais em informações estruturadas, indicadores gerenciais e análises técnicas que contribuam para o planejamento e o aprimoramento da gestão pública.
+
+O projeto integra análise de pessoal, matrículas, escolas, turmas, turnos, distribuição de profissionais e parâmetros de dimensionamento.
+
+## Áreas de atuação
+
+| Área                       | Objetivo                                                         |
+| -------------------------- | ---------------------------------------------------------------- |
+| Análise de dados           | Examinar bases administrativas e educacionais.                   |
+| Auditoria de informações   | Identificar inconsistências e pontos que exigem validação.       |
+| Gestão de pessoas          | Analisar distribuição e organização do quadro de pessoal.        |
+| Educação pública           | Apoiar o planejamento das redes municipais de ensino.            |
+| Transparência e eficiência | Produzir informações verificáveis para decisões administrativas. |
 
 ## Documentação
 
-A documentação e os parâmetros do projeto estão organizados em:
+A documentação técnica e metodológica está organizada nos seguintes materiais:
 
 * [Manual de configuração municipal](observatorio-rh-educacao-publicacao/configuracao/manual-configuracao.md)
 * [Modelo de configuração municipal](observatorio-rh-educacao-publicacao/configuracao/modelo-configuracao-municipal.json)
@@ -24,22 +41,12 @@ A documentação e os parâmetros do projeto estão organizados em:
 * [Metodologia de auditoria](observatorio-rh-educacao-publicacao/skills/auditoria-rede-municipal/SKILL.md)
 * [Política de segurança](observatorio-rh-educacao-publicacao/SECURITY.md)
 
-## Metodologia
+## Princípios metodológicos
 
-O projeto considera a identificação de servidores únicos, a distinção entre vínculos e atuações, a aplicação de parâmetros municipais e a apresentação de resultados agregados.
+O Observatório adota princípios de análise responsável:
 
-As diferenças identificadas nas análises são alertas para conferência, não conclusões automáticas de irregularidade.
-
-## Situação do projeto
-
-Este repositório contém documentação, metodologia e configurações de referência.
-
-O plugin utilizado no ChatGPT permanece privado. Este repositório público não contém um motor autônomo de processamento de planilhas.
-
-## Privacidade
-
-Não são disponibilizadas planilhas nominais, dados pessoais de servidores ou estudantes, informações clínicas ou relatórios individualizados.
-
-## Licença
-
-Ainda não foi atribuída uma licença de código aberto ao projeto. Os direitos autorais permanecem reservados.
+* Identificação de servidores únicos, evitando duplicidades.
+* Distinção entre pessoas, vínculos, lotações e atuações.
+* Aplicação de parâmetros conforme as características de cada município.
+* Rastreabilidade dos critério
+autorais permanecem reservados.
