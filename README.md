@@ -1,8 +1,8 @@
 <div align="center">
 <p align="center">
-  <img src="observatorio-rh-educacao-icone.png.png" alt="Símbolo oficial do Observatório RH Educação" width="180">
+  <img src="assets/brand/observatorio-rh-educacao-icone.png.png" alt="Símbolo oficial do Observatório RH Educação" width="180">
 </p>
-<img src="ChatGPT Image 1 de nov. de 2026, 20_58_06.png" alt="Observatório RH Educação" width="100%">
+<img src="assets/brand/ChatGPT Image 1 de nov. de 2026, 20_58_06.png" alt="Observatório RH Educação" width="100%">
 
 # Observatório RH Educação
 
