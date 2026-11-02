@@ -56,9 +56,9 @@ O Observatório adota princípios de análise responsável:
 
 ## Privacidade e proteção de dados
 
-O projeto adota cuidados para evitar a exposição indevida de dados pessoais e informações funcionais sensíveis.
+O projeto observa os princípios da Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018), especialmente quanto à finalidade, necessidade, segurança e prevenção.
 
-Bases reais de servidores, documentos administrativos e informações identificáveis não devem ser publicados neste repositório.
+Bases reais de servidores, documentos administrativos e informações pessoais ou sensíveis não devem ser publicados neste repositório. As análises devem priorizar dados agregados, com acesso restrito às informações individualizadas quando estritamente necessário e autorizado.
 
 ## Natureza do repositório
 
