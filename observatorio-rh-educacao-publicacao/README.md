@@ -15,19 +15,29 @@ Documentação e configurações de referência para auditoria de dados de recur
 ## Estrutura
 
 ```text
-.
-├── configuracao/
-│   ├── especificacao-dashboard.md
-│   ├── manual-configuracao.md
-│   ├── modelo-configuracao-municipal.json
-│   └── sao-cristovao.json
-├── skills/
-│   └── auditoria-rede-municipal/
-│       └── SKILL.md
+observatorio-rh-educacao/
+├── assets/
+│   └── brand/
+│       ├── observatorio-rh-educacao-icone.png.png
+│       └── ChatGPT Image 1 de nov. de 2026, 20_58_06.png
+├── observatorio-rh-educacao-publicacao/
+│   ├── configuracao/
+│   │   ├── especificacao-dashboard.md
+│   │   ├── manual-configuracao.md
+│   │   ├── modelo-configuracao-municipal.json
+│   │   └── sao-cristovao.json
+│   ├── skills/
+│   │   └── auditoria-rede-municipal/
+│   │       └── SKILL.md
+│   ├── .gitignore
+│   ├── README.md
+│   └── SECURITY.md
 ├── .gitignore
-├── README.md
-└── SECURITY.md
+└── README.md
 ```
+
+A identidade visual oficial do projeto está armazenada em `assets/brand/`. A documentação e os arquivos de referência estão organizados em `observatorio-rh-educacao-publicacao/`.
+
 
 ## Comece por aqui
 
