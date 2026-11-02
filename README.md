@@ -50,5 +50,22 @@ O Observatório adota princípios de análise responsável:
 * Identificação de servidores únicos, evitando duplicidades.
 * Distinção entre pessoas, vínculos, lotações e atuações.
 * Aplicação de parâmetros conforme as características de cada município.
-* Rastreabilidade dos critério
-autorais permanecem reservados.
+* Rastreabilidade dos critérios utilizados nas análises.
+* Validação das informações antes de qualquer conclusão.
+* Preservação da qualidade pedagógica e da continuidade dos serviços educacionais.
+
+## Privacidade e proteção de dados
+
+O projeto adota cuidados para evitar a exposição indevida de dados pessoais e informações funcionais sensíveis.
+
+Bases reais de servidores, documentos administrativos e informações identificáveis não devem ser publicados neste repositório.
+
+## Natureza do repositório
+
+Este repositório reúne documentação, metodologia e arquivos de referência do Observatório RH Educação.
+
+Ele não representa, isoladamente, um sistema automatizado de processamento de dados.
+
+## Situação do projeto
+
+O projeto encontra-se em evolução, com desenvolvimento contínuo de sua documentação, identidade visual, metodologia e recursos de apoio à gestão educacional.
