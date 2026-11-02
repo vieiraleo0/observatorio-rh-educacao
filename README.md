@@ -53,6 +53,7 @@ O Observatório adota princípios de análise responsável:
 * Rastreabilidade dos critérios utilizados nas análises.
 * Validação das informações antes de qualquer conclusão.
 * Preservação da qualidade pedagógica e da continuidade dos serviços educacionais.
+* * Divergências em relação aos parâmetros estabelecidos devem ser tratadas como alertas para conferência e validação humana, não como provas automáticas de irregularidade nem como recomendações automáticas de contratação ou desligamento.
 
 ## Privacidade e proteção de dados
 
