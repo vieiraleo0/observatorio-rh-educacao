@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="observatorio-rh-educacao-capa-github.png" alt="Observatório RH Educação" width="100%">
+<img src="ChatGPT Image 1 de nov. de 2026, 20_58_06" alt="Observatório RH Educação" width="100%">
 
 # Observatório RH Educação
 
