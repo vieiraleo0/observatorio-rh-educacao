@@ -63,9 +63,9 @@ Bases reais de servidores, documentos administrativos e informações pessoais o
 
 ## Natureza do repositório
 
-Este repositório reúne documentação, metodologia e arquivos de referência do Observatório RH Educação.
+Este repositório público reúne a documentação, a metodologia, a identidade visual e os arquivos de referência do Observatório RH Educação.
 
-Ele não representa, isoladamente, um sistema automatizado de processamento de dados.
+O plugin utilizado no ChatGPT permanece privado. Portanto, este repositório não contém o funcionamento interno completo do plugin nem constitui, isoladamente, um sistema automatizado de processamento de dados ou um serviço web hospedado.
 
 ## Situação do projeto
 
